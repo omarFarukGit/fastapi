@@ -223,6 +223,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-
-
-# curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore

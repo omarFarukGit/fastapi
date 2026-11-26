@@ -1,13 +1,23 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException
+from pydantic import BaseModel
 
-app = FastAPI()
+app=FastAPI()
 
+@app.get('/{id}')
+def root(id):
+    return {"id":id}
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+class User(BaseModel):
+    name:str
+    email:str
+    age:int
+    
+@app.post('/')
+def create(user:User):
+    return {"success": True, "status_code": 201, "message": "user created successfully", "data": user.model_dump()}
 
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str | None = None):
-    return {"item_id": item_id, "q": q}
+class UpdateUser(BaseModel):
+    name:str | None=None
+    email:str | None=None
+    age:int | None=None
+    
