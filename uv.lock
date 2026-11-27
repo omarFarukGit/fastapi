@@ -163,6 +163,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
     { name = "pymongo" },
+    { name = "python-decouple" },
     { name = "uvicorn" },
 ]
 
@@ -170,6 +171,7 @@ dependencies = [
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.165.0" },
     { name = "pymongo", specifier = ">=4.20.2" },
+    { name = "python-decouple", specifier = ">=3.8" },
     { name = "uvicorn", specifier = ">=0.54.0" },
 ]
 
@@ -748,6 +750,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/30/d6/b8eb7e917d95fdb951dec1c09e82bfed816dac34995280807c4e6d18950e/pymongo-4.20.2-cp315-cp315t-win32.whl", hash = "sha256:a83072e46e104fa0b35751d5542ab00922a3e9d992e1460754d71b490a8e4d89", size = 824556, upload-time = "2026-11-25T17:48:55.099Z" },
     { url = "https://files.pythonhosted.org/packages/8c/58/2d254f6619712f4f150e559574bab3154b6449f7481e1e7d269c3f433ac4/pymongo-4.20.2-cp315-cp315t-win_amd64.whl", hash = "sha256:1bb87210b963e0435f002ef9f67ed3c5755f8d9d5f7f6ba38c738f64fef7e664", size = 831968, upload-time = "2026-11-25T17:48:56.512Z" },
     { url = "https://files.pythonhosted.org/packages/76/47/d928fb676d600c0c764fed18c25089014de25ef49c966fd834e6654a5fd2/pymongo-4.20.2-cp315-cp315t-win_arm64.whl", hash = "sha256:1511172da10cbb67d61b392afd4bd228842f278b684f1b85fed4ebcaf2647cd8", size = 826173, upload-time = "2026-11-25T17:48:58.08Z" },
+]
+
+[[package]]
+name = "python-decouple"
+version = "3.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e1/97/373dcd5844ec0ea5893e13c39a2c67e7537987ad8de3842fe078db4582fa/python-decouple-3.8.tar.gz", hash = "sha256:ba6e2657d4f376ecc46f77a3a615e058d93ba5e465c01bbe57289bfb7cce680f", size = 9612, upload-time = "2023-03-01T19:38:38.143Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/d4/9193206c4563ec771faf2ccf54815ca7918529fe81f6adb22ee6d0e06622/python_decouple-3.8-py3-none-any.whl", hash = "sha256:d0d45340815b25f4de59c974b855bb38d03151d81b037d9e3f463b0c9f8cbd66", size = 9947, upload-time = "2023-03-01T19:38:36.015Z" },
 ]
 
 [[package]]
